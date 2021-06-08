@@ -52,6 +52,11 @@ form.addEventListener('submit', function(event) {
   const year = document.querySelector('#tahun');
   const isComplete = document.querySelector('#selesai');
 
+  if (id === '' || title === '' || author === '' || year === '') {
+    alert('Form data tidak boleh kosong');
+    return;
+  }
+
   const bookData = {
     id,
     title: title.value,

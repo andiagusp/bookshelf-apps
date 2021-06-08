@@ -167,3 +167,23 @@ label {
   background: var(--light);
   color: var(--darker);
 }
+
+@media screen and (max-width: 768px) {
+  .form-append > input {
+    width: 85%;
+    border: 1px solid var(--darker);
+    border-radius: 5px 0 0 5px;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .form-append > input {
+    width: 82%;
+    border: 1px solid var(--darker);
+    border-radius: 5px 0 0 5px;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+}
