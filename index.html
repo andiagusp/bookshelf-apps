@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bookshelf Apps</title>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1 class="title-header">Bookshelf Apps</h1>
+  </header>
+  <main>
+    <div class="container">
+      <section class="form-buku card">
+        <h2 class="title">Masukkan Buku Baru</h2>
+        <form id="form-simpan">
+          <div class="form-group">
+            <label for="judul">Judul</label>
+            <input type="text" name="judul" id="judul" placeholder="Masukkan judul ...">
+          </div>
+          <div class="form-group">
+            <label for="penulis">Penulis</label>
+            <input type="text" name="penulis" id="penulis" placeholder="Masukkan penulis ...">
+          </div>
+          <div class="form-group">
+            <label for="tahun">Tahun</label>
+            <input type="number" name="tahun" id="tahun" placeholder="Masukkan penulis ...">
+          </div>
+          <div class="form-group">
+            <label for="selesai">Selesai dibaca</label>
+            <input type="checkbox" name="selesai" id="selesai">
+          </div>
+          <div class="form-group">
+            <button type="submit">Simpan Buku Dalam List</button>
+          </div>
+        </form>
+      </section>
+      <section class="form-cari card">
+        <h3 class="title">Cari Buku</h3>
+        <form id="form-search">
+          <div class="form-append">
+            <input type="text" name="search" id="search" placeholder="Masukkan judul buku ...">
+            <button type="submit"class="btn-search">Cari</button>
+          </div>
+        </form>
+      </section>
+      <section class="reading-group card" id="reading-group">
+      </section>
+      <section class="finish-group card" id="finish-group">
+      </section>
+    </div>
+  </main>
+  <footer>
+    <h4 class="title-footer">Created By Andi Agus Purnomo</h4>
+  </footer>
+
+  <script src="js/bookshelf.js"></script>
+</body>
+</html>
